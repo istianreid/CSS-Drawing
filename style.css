@@ -1,0 +1,217 @@
+body{
+  margin: 10px;
+  padding: 0;
+  animation: rainbow-bg 3s infinite;
+  /* background-color: #25A9FC; */
+}
+
+.container {
+  height: 600px;
+	width: 800px;
+  border: 30px solid white;
+  border-radius: 6%;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+  right: 0;
+}
+
+.koala{
+  position: absolute;
+  left: 28px;
+}
+
+.horn-l{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background-color: #A6BECF; 
+  clip-path: polygon(50% 0, 19% 45%, 89% 52%);
+  top: 120px;
+  left: 200px;
+}
+
+.horn-r{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background-color: #A6BECF; 
+  clip-path: polygon(50% 0, 4% 45%, 89% 52%);
+  top: 130px;
+  left: 260px;
+  
+}
+
+.ears-l{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background-color: #819CAF; 
+  border-radius: 50%;
+  top: 140px;
+  left: 140px;
+  border-color: #819CAF;
+  border: 28px double #A6BECF;
+  animation: ear-movement 7s infinite;
+}
+
+.ears-r{
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background-color: #819CAF; 
+  border-radius: 50%;
+  top: 140px;
+  left: 420px;
+  border-color: #819CAF;
+  border: 28px double #A6BECF;
+  animation: ear-movement 7s infinite;
+}
+
+.face {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  background-color: #A6BECF; 
+  border-radius: 50%;
+  top: 140px;
+  left: 230px;
+
+}
+.mouth{
+  height: 200px;
+  width: 60px;
+  position: absolute;
+  background-color: black;
+  clip-path: ellipse(40% 4% at 50% 50%);
+  top: 157px ;
+  left: 123px;
+  z-index: 1;
+
+  animation: mouth 2s;
+  animation-iteration-count: infinite;
+}
+.tongue{
+  height: 200px;
+  width: 60px;
+  position: absolute;
+  background-color: red;
+  clip-path: ellipse(45% 1% at 49% 53%);
+}
+
+.eyes-cornea-r {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background-color:black; 
+  border-radius: 50%;
+  top: 100px;
+}
+
+.eyes-l {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  background-color: white; 
+  border-radius: 50%;
+  top: 70px;
+  left: 70px;
+  animation: blink 10s;
+  animation-iteration-count: infinite;
+}
+
+.eyes-cornea-l {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background-color:black; 
+  border-radius: 50%;
+  top: 100px;
+  left: 100px;
+  animation: blink 10s;
+  animation-iteration-count: infinite;
+}
+
+.eyes-r {
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  background-color: white; 
+  border-radius: 50%;
+  top: 70px;
+  left: 140px;
+
+  animation: blink 10s;
+  animation-iteration-count: infinite;
+}
+
+.eyes-cornea-r {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background-color:black; 
+  border-radius: 50%;
+  top: 100px;
+  left: 170px;
+
+  animation: blink 10s;
+  animation-iteration-count: infinite;
+}
+
+.nose {
+  height: 100px;
+  width: 80px;
+  position: absolute;
+  background-color: #BE845F; 
+  border-radius: 40%;
+  top: 140px;
+  left: 110px;
+  z-index: 1;
+}
+
+@keyframes blink {
+	0%,
+	30%,
+	32%,
+	100% {
+		opacity: 1;
+	}
+	31% {
+		opacity: 0;
+	}
+}
+
+@keyframes ear-movement {
+  0%,
+	30%,
+	32%,
+	100%  {
+		opacity: 1;
+	}
+	31%{
+		opacity: 0;
+	}
+}
+
+@keyframes rainbow-bg {
+  0% {
+    background-color: #25aafc7c;
+  }
+  50% {
+    background-color: #25fc426e;
+  }
+  100% {
+    background-color: #f8fc256b;
+  }
+}
+
+@keyframes mouth {
+  0% {
+    clip-path: ellipse(40% 4% at 50% 50%);
+  }
+  100% {
+    clip-path: ellipse(46% 4% at 50% 50%);
+  }
+}
