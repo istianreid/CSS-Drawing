@@ -197,13 +197,13 @@ body{
 
 @keyframes rainbow-bg {
   0% {
-    background-color: #25aafc7c;
+    background-color: #25aafc4f;
   }
   50% {
-    background-color: #25fc426e;
+    background-color: #25fc4236;
   }
   100% {
-    background-color: #f8fc256b;
+    background-color: #f8fc2542;
   }
 }
 
